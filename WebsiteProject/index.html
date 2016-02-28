@@ -1,0 +1,82 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  <title>BunnyBot</title>
+	  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	  <link type="text/css" rel="stylesheet" href="css/style.css">
+	  <link type="text/css" rel="stylesheet" href="css/custom.css">
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+<body >
+	<script language=JavaScript>
+		<!--
+
+		//Disable right mouse click Script
+		//By Maximus (maximus@nsimail.com) w/ mods by DynamicDrive
+		//For full source code, visit http://www.dynamicdrive.com
+
+		var message="Oops you can't view the source code buddy!";
+
+		///////////////////////////////////
+		function clickIE4(){
+		if (event.button==2){
+		alert(message);
+		return false;
+		}
+		}
+
+		function clickNS4(e){
+		if (document.layers||document.getElementById&&!document.all){
+		if (e.which==2||e.which==3){
+		alert(message);
+		return false;
+		}
+		}
+		}
+
+		if (document.layers){
+		document.captureEvents(Event.MOUSEDOWN);
+		document.onmousedown=clickNS4;
+		}
+		else if (document.all&&!document.getElementById){
+		document.onmousedown=clickIE4;
+		}
+
+		document.oncontextmenu=new Function("alert(message);return false")
+
+		// --> 
+	</script>
+
+<div class="card-panel teal accent-3" style="height: 130px;">
+ <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Drop Me!</a>
+  <ul id='dropdown1' class='dropdown-content'>
+   <li><a href="login.html" target="_blank">Login</a></li>
+   <li><a href="sign_up.html" target="_blank">Sign up</a></li>
+   <li><a href="issues.html" target="_blank">Issues</a></li>
+  </ul>
+   <center>
+ 	<span class="card-panel cyan" >
+	 <a href="#"><font color="#ffffff" >BunnyBot</font></a>
+	</span>
+    </center>
+</div>
+
+<div class="image">
+  <img  src="images/background.jpg" width="100%">
+     <h2 align="center"><span>Welcome to the world of Artificial intelligence</span></h2>
+ <div class="button">
+   <h6 align="center"><span> 
+       <a class="btn-floating btn-large waves-effect waves-light red" href="login.html" target="_blank">Start</a>
+    </span></h2>
+ </div>
+</div>
+		
+	
+      
+      <script type="text/javascript" src="js/jquery.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+ </body>
+</html>
+        

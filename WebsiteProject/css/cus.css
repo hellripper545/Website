@@ -1,0 +1,34 @@
+.image{
+	position: relative; 
+   width: 100%; /* for IE 6 */
+}
+h2 span { 
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   padding: 10px; 
+}
+h2 { 
+   position: absolute; 
+   top: 90px; 
+   left: 0; 
+   width: 100%;
+}
+h3 { 
+   position: absolute; 
+   top: 160px; 
+   left: 0; 
+   width: 100%;
+}
+h3 span { 
+   color: #c5cae9 ; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   padding: 10px; 
+}
+.button{
+	 position: absolute;
+	 top: 250px;
+	 left: 0px;
+	 width: 100%;
+}

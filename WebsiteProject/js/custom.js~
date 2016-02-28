@@ -1,0 +1,25 @@
+/*!
+ * Materialize v0.97.5 (http://materializecss.com)
+ * Copyright 2014-2015 Materialize
+ * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
+ */
+// Check for jQuery.
+if (typeof(jQuery) === 'undefined') {
+  var jQuery;
+  // Check if require is a defined function.
+  if (typeof(require) === 'function') {
+    jQuery = $ = require('jQuery');
+  // Else use the dollar sign alias.
+  } else {
+    jQuery = $;
+  }
+};
+
+$(document).ready(function(){
+      $('.parallax').parallax();
+    });
+
+.parallax-container {
+      height: "10%";
+    }
+       

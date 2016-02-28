@@ -1,0 +1,17 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$conn = mysql_connect($servername, $username, $password);
+if (!$conn) {
+    die("Connection failed: " . mysql_error());
+}
+mysql_select_db("myDB")or die(mysql_error());
+$a="select *from issues";
+$b=mysql_query($a);
+while($c=mysql_fetch_array($b))
+{
+echo "<table border=2 style='width:100%' bgcolor='cyan'><tr><th>Issue</th><th>Reproduce</th><th>Email</th></tr><tr><td>".$c['issue']."</td><td>".$c['solution']. "</td><td>".$c['email']."</td></tr></table><br><br>";
+}
+mysql_close();
+?>

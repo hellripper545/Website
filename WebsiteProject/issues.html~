@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  <title>BunnyBot</title>
+	  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	  <link type="text/css" rel="stylesheet" href="css/style.css">
+<style>
+.issues_panel{
+	position: absolute;
+	top:10%;
+	left:30%;
+}
+body{ 
+	background-image: url('images/2.jpg');
+	background-repeat: no-repeat;
+	background-position:top center;
+	background-size:100%;
+
+}
+</style>
+</head>
+	
+<body>
+
+ <div class="issues_panel">
+  <div class="card-panel blue-grey darken-3" style="width:500px;height:10%;margin:0 auto;">
+   Please Don't report the same issue. <a href="view_issues.php" target="_blank">Kindly refer here</a></div>
+  <div class="card-panel blue-grey lighten-3" style="width:500px;margin:0 auto;">
+   <div class="row">
+    <form class="col s12" action="issues.php" method="POST">
+     <div class="row">
+        <div class="input-field col s12">
+          <textarea name="textarea1" class="materialize-textarea" length="120"></textarea>
+          <label for="textarea1">Issue</label>
+        </div>
+     </div>
+	<div class="row">
+         <div class="input-field col s12">
+          <textarea name="textarea2" class="materialize-textarea" length="240"></textarea>
+          <label for="textarea2">How to reproduce the issue</label>
+         </div>
+	</div>
+	  <div class="row">
+	   <div class="input-field col s12">
+		<input name="email" type="email" class="validate">
+		<label for="email" data-error="Something is wrong">Email</label>
+	   </div>
+	  </div>
+	<div>
+	 <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+	 </button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	 <button class="btn waves-effect waves-light" type="reset" name="action">Reset
+	 </button>
+	 <!--<button class="btn waves-effect waves-light" type="reset" name="action">Reset</button>-->
+	 </div>
+    </form>
+  </div>
+ </div>       
+</div>	
+
+	
+	
+      <script type="text/javascript" src="js/jquery.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+ </body>
+</html>

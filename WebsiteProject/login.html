@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  <title></title>
+	  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	  <link type="text/css" rel="stylesheet" href="css/style.css">
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<style>
+.login_panel{
+	position: absolute;
+	top:20%;
+	left:30%;
+}
+body{ 
+	background-image: url('images/1.jpg');
+	background-repeat: no-repeat;
+	background-position:top center;
+	background-size:100%;
+
+}
+</style>
+</head>
+
+<body>
+  <div class="login_panel">
+    <div class="card-panel N/A transparent" style="width:500px;margin:0 auto;">
+     <div class="row" >
+	<form class="col s12" action="validate.php" method="POST">
+	<div class="row">
+	   <div class="input-field col s12">
+		<input name="login_id" type="text" class="validate">
+		<label for="user_name">Username</label>
+	   </div>
+	<div class="row">
+	   <div class="input-field col s12">
+		<input name="pwd" type="password" class="validate">
+		<label name="pwd">Password</label>
+	   </div>
+    </div>
+  </div>
+
+<center>
+<button class="btn waves-effect waves-light" type="submit" name="action">Login
+<!--<i class="material-icons right">send</i>-->
+</button>
+</center>
+</form>
+</div>
+</div>
+</div>
+	
+
+
+
+	
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>
